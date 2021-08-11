@@ -107,8 +107,8 @@ df = load_data()
 sorted_coin = sorted( df['coin_symbol'])
 # sorted_coin = sorted( df['coin_symbol'].head() )
 # sorted_coin = df[(df['coin_symbol'] == ['BTC']) & (df['coin _symbol'] == ['ETH'])]
-# selected_coin = col1.multiselect('Cryptocurrency', sorted_coin, ['BTC', 'ETH', 'USDT', 'ADA', 'SHIB'])
-selected_coin = col1.multiselect('Cryptocurrency', sorted_coin, sorted_coin)
+selected_coin = col1.multiselect('Cryptocurrency', sorted_coin, ['BTC', 'ETH', 'USDT', 'ADA', 'SHIB'])
+# selected_coin = col1.multiselect('Cryptocurrency', sorted_coin, sorted_coin)
 
 df_selected_coin = df[ (df['coin_symbol'].isin(selected_coin)) ] # Filtering data
 
