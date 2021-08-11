@@ -1,0 +1,8 @@
+streamlit==0.86.0
+pandas==1.1.4
+numpy==1.18.5
+base58==2.1.0
+matplotlib==3.3.3
+bs4==0.0.1
+requests==2.25.0
+forex_python==1.6
